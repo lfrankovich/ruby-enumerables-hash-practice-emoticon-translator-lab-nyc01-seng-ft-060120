@@ -1,5 +1,5 @@
 require "yaml"
-
+require "pry"
 # load emoticons.yml file
 #  accepts one argument, the file path
   #return a hash where each key is the name ofan emoticon
@@ -11,6 +11,7 @@ def load_library(file)
   result = {}
   library.each do |key, value|
     result[key]={}
+    binding.pry
     result[key][:english] = value[0]
     result[key][:japanese] = value[1]
   end
