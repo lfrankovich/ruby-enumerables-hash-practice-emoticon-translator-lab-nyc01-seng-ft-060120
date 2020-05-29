@@ -13,10 +13,10 @@ def load_library(file)
     result[key]={}
     result[key][:english] = value[0]
     result[key][:japanese] = value[1]
-        binding.pry
-
   end
  result
+         binding.pry
+
 end
 
 require 'pry'
