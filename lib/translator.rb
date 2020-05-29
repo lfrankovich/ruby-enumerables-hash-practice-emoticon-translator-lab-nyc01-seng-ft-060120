@@ -11,9 +11,10 @@ def load_library(file)
   result = {}
   library.each do |key, value|
     result[key]={}
-    binding.pry
     result[key][:english] = value[0]
     result[key][:japanese] = value[1]
+        binding.pry
+
   end
  result
 end
